@@ -1,0 +1,71 @@
+<div class="flex flex-col items-center justify-center h-screen bg-amber-300">
+  <th class="w-[960px]">
+    <div class="relative flex items-center w-full h-12 overflow-hidden bg-white border focus-within:shadow-md ">
+      <div class="grid w-12 h-full text-gray-300 place-items-center">
+        <span class="material-symbols-rounded">
+          search
+          </span>
+      </div>
+      <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." [(ngModel)]="nameKey"/>
+  </div>
+  </th>
+
+  <section class="flex items-center justify-center ">
+
+    <!-- Name table -->
+    <table class="flex flex-col bg-white w-80 h-[600px]">
+      <th class="p-4 text-center" >Name</th>
+      <!-- <div class="relative flex items-center w-full h-12 overflow-hidden bg-white border focus-within:shadow-md ">
+        <div class="grid w-12 h-full text-gray-300 place-items-center">
+          <span class="material-symbols-rounded">
+            search
+            </span>
+        </div>
+        <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." [(ngModel)]="nameKey"/>
+    </div> -->
+      <tbody class="flex flex-col ">
+        <tr class="p-3 border" *ngFor="let item of data| searchPipe:nameKey">
+          <p>{{item.name}}</p>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Company table -->
+    <table class="flex flex-col bg-white w-80 h-[600px]">
+      <th class="p-4 text-center" >Company</th>
+      <!-- <div class="relative flex items-center w-full h-12 overflow-hidden bg-white border focus-within:shadow-md ">
+        <div class="grid w-12 h-full text-gray-300 place-items-center">
+          <span class="material-symbols-rounded">
+            search
+            </span>
+        </div>
+        <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." [(ngModel)]="nameKey"/>
+    </div> -->
+      <tbody class="flex flex-col ">
+        <tr class="p-3 border" *ngFor="let item of data| searchPipe:nameKey">
+          <p>{{item.company.name }}</p>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Position table -->
+    <table class="flex flex-col bg-white w-80 h-[600px]">
+      <th class="p-4 text-center" >Position</th>
+      <!-- <div class="relative flex items-center w-full h-12 overflow-hidden bg-white border focus-within:shadow-md ">
+        <div class="grid w-12 h-full text-gray-300 place-items-center">
+          <span class="material-symbols-rounded">
+            search
+            </span>
+        </div>
+        <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." />
+    </div> -->
+      <tbody class="flex flex-col ">
+        <tr class="p-3 border" *ngFor="let item of data| searchPipe:nameKey">
+          <p>{{item.company.designation}}</p>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+</div>
