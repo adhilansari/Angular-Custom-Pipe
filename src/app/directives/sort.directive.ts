@@ -18,9 +18,6 @@ export class SortDirective {
 
     // Get Reference of current clicked element
     const elem = this.targetElem.nativeElement;
-    console.log(elem);
-    console.log(this.appSort);
-
 
     // Get In which order list should be sorted by default it would be set to desc on element attribute
     const order = elem.getAttribute("data-order");
