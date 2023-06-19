@@ -6,7 +6,7 @@
           search
           </span>
       </div>
-      <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." [(ngModel)]="searchKey"/>
+      <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search name/ company/ position." [(ngModel)]="searchKey"/>
   </div>
   </th>
 
@@ -14,7 +14,7 @@
 
     <!-- Name table -->
     <table class="flex flex-col bg-white border w-80 h-[600px]">
-      <th class="flex items-center justify-between p-4" [appSort]="data" data-order="desc" data-name="name" >Name
+      <th class="flex items-center justify-between p-4 cursor-pointer" [appSort]="data" data-order="desc" data-name="name" >Name
         <span class="material-symbols-rounded">
           swap_vert
           </span>
@@ -36,7 +36,7 @@
 
     <!-- Company table -->
     <table class="flex flex-col bg-white w-80 h-[600px]">
-      <th class="flex items-center justify-between p-4 border" [appSort]="data" data-order="desc" data-name="company" >Company
+      <th class="flex items-center justify-between p-4 border cursor-pointer" [appSort]="data" data-order="desc" data-name="company" >Company
         <span class="material-symbols-rounded">
           swap_vert
           </span>
@@ -58,7 +58,7 @@
 
     <!-- Position table -->
     <table class="flex flex-col bg-white w-80 h-[600px]">
-      <th class="flex items-center justify-between p-4 border" [appSort]="data" data-order="desc" data-name="position"  >Position
+      <th class="flex items-center justify-between p-4 border cursor-pointer" [appSort]="data" data-order="desc" data-name="position"  >Position
         <span class="material-symbols-rounded">
           swap_vert
           </span>
