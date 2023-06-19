@@ -6,12 +6,8 @@ export interface IEmployee{
     suite:string,
     zipcode:string
   },
-  company:{
-    bs:string,
-    catchPhrase:string,
-    designation:string,
-    name:string
-  },
+  company:string,
+  position:string,
   email:string,
   name:string,
   phone:string,

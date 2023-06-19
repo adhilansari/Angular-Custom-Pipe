@@ -7,13 +7,15 @@ import { SortingComponent } from './components/sorting/sorting.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { SearchPipePipe } from './pipes/search-pipe.pipe';
+import { SortDirective } from './directives/sort.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SortingComponent,
-    SearchPipePipe
+    SearchPipePipe,
+    SortDirective
   ],
   imports: [
     BrowserModule,

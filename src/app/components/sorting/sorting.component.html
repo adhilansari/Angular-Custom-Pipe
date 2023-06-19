@@ -6,15 +6,19 @@
           search
           </span>
       </div>
-      <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." [(ngModel)]="nameKey"/>
+      <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." [(ngModel)]="searchKey"/>
   </div>
   </th>
 
   <section class="flex items-center justify-center ">
 
     <!-- Name table -->
-    <table class="flex flex-col bg-white w-80 h-[600px]">
-      <th class="p-4 text-center" >Name</th>
+    <table class="flex flex-col bg-white border w-80 h-[600px]">
+      <th class="flex items-center justify-between p-4" [appSort]="data" data-order="desc" data-name="name" >Name
+        <span class="material-symbols-rounded">
+          swap_vert
+          </span>
+      </th>
       <!-- <div class="relative flex items-center w-full h-12 overflow-hidden bg-white border focus-within:shadow-md ">
         <div class="grid w-12 h-full text-gray-300 place-items-center">
           <span class="material-symbols-rounded">
@@ -24,7 +28,7 @@
         <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." [(ngModel)]="nameKey"/>
     </div> -->
       <tbody class="flex flex-col ">
-        <tr class="p-3 border" *ngFor="let item of data| searchPipe:nameKey">
+        <tr class="p-3 border" *ngFor="let item of data| searchPipe:searchKey">
           <p>{{item.name}}</p>
         </tr>
       </tbody>
@@ -32,7 +36,11 @@
 
     <!-- Company table -->
     <table class="flex flex-col bg-white w-80 h-[600px]">
-      <th class="p-4 text-center" >Company</th>
+      <th class="flex items-center justify-between p-4 border" [appSort]="data" data-order="desc" data-name="company" >Company
+        <span class="material-symbols-rounded">
+          swap_vert
+          </span>
+      </th>
       <!-- <div class="relative flex items-center w-full h-12 overflow-hidden bg-white border focus-within:shadow-md ">
         <div class="grid w-12 h-full text-gray-300 place-items-center">
           <span class="material-symbols-rounded">
@@ -42,15 +50,19 @@
         <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." [(ngModel)]="nameKey"/>
     </div> -->
       <tbody class="flex flex-col ">
-        <tr class="p-3 border" *ngFor="let item of data| searchPipe:nameKey">
-          <p>{{item.company.name }}</p>
+        <tr class="p-3 border" *ngFor="let item of data| searchPipe:searchKey">
+          <p>{{item.company }}</p>
         </tr>
       </tbody>
     </table>
 
     <!-- Position table -->
     <table class="flex flex-col bg-white w-80 h-[600px]">
-      <th class="p-4 text-center" >Position</th>
+      <th class="flex items-center justify-between p-4 border" [appSort]="data" data-order="desc" data-name="position"  >Position
+        <span class="material-symbols-rounded">
+          swap_vert
+          </span>
+      </th>
       <!-- <div class="relative flex items-center w-full h-12 overflow-hidden bg-white border focus-within:shadow-md ">
         <div class="grid w-12 h-full text-gray-300 place-items-center">
           <span class="material-symbols-rounded">
@@ -60,8 +72,8 @@
         <input class="w-full h-full pr-2 text-sm text-gray-700 outline-none peer" type="text" id="search" placeholder="Search something.." />
     </div> -->
       <tbody class="flex flex-col ">
-        <tr class="p-3 border" *ngFor="let item of data| searchPipe:nameKey">
-          <p>{{item.company.designation}}</p>
+        <tr class="p-3 border" *ngFor="let item of data| searchPipe:searchKey">
+          <p>{{item.position}}</p>
         </tr>
       </tbody>
     </table>

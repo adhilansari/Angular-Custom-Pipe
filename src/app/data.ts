@@ -1,4 +1,4 @@
-import { IEmployee } from "../models/employee.model";
+import { IEmployee } from "./models/employee.model";
 
 export const employeeData:IEmployee[]= [
   {
@@ -14,12 +14,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "1-770-736-8031 x56442",
   "website": "hildegard.org",
-  "company": {
-  "name": "Romaguera-Crona",
-  "catchPhrase": "Multi-layered client-server neural-net",
-  "designation": "Laravel Developer",
-  "bs": "harness real-time e-markets"
-  }
+  "company":"Romaguera-Crona",
+  "position":"NodeJS Developer"
   },
   {
   "id": 2,
@@ -34,12 +30,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "010-692-6593 x09125",
   "website": "anastasia.net",
-  "company": {
-  "name": "Deckow-Crist",
-  "catchPhrase": "Proactive didactic contingency",
-  "designation": "angular Developer",
-  "bs": "synergize scalable supply-chains"
-  }
+  "company":"Deckow-Crist",
+  "position":"Angular Developer"
   },
   {
   "id": 3,
@@ -54,12 +46,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "1-463-123-4447",
   "website": "ramiro.info",
-  "company": {
-  "name": "Romaguera-Jacobson",
-  "catchPhrase": "Face to face bifurcated interface",
-  "designation": "Laravel Developer",
-  "bs": "e-enable strategic applications"
-  }
+  "company":"Romaguera-Jacobson",
+  "position":"Laravel Developer"
   },
   {
   "id": 4,
@@ -74,12 +62,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "493-170-9623 x156",
   "website": "kale.biz",
-  "company": {
-  "name": "Robel-Corkery",
-  "catchPhrase": "Multi-tiered zero tolerance productivity",
-  "designation": "Python Developer",
-  "bs": "transition cutting-edge web services"
-  }
+  "company":"Robel-Corkery",
+  "position":"Python Developer"
   },
   {
   "id": 5,
@@ -94,12 +78,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "(254)954-1289",
   "website": "demarco.info",
-  "company": {
-  "name": "Keebler LLC",
-  "catchPhrase": "User-centric fault-tolerant solution",
-  "designation": "angular Developer",
-  "bs": "revolutionize end-to-end systems"
-  }
+  "company":"Keebler LLC",
+  "position":"Angular Developer"
   },
   {
   "id": 6,
@@ -114,12 +94,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "1-477-935-8478 x6430",
   "website": "ola.org",
-  "company": {
-  "name": "Romaguera-Crona",
-  "catchPhrase": "Synchronised bottom-line interface",
-  "designation": "Laravel Developer",
-  "bs": "e-enable innovative applications"
-  }
+  "company":"Romaguera-Crona",
+  "position":"Laravel Developer"
   },
   {
   "id": 7,
@@ -134,12 +110,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "210.067.6132",
   "website": "elvis.io",
-  "company": {
-  "name": "Johns Group",
-  "catchPhrase": "Configurable multimedia task-force",
-  "designation": "Laravel Developer",
-  "bs": "generate enterprise e-tailers"
-  }
+  "company":"Johns Group",
+  "position":"Laravel Developer"
   },
   {
   "id": 8,
@@ -154,12 +126,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "586.493.6943 x140",
   "website": "jacynthe.com",
-  "company": {
-  "name": "Abernathy Group",
-  "catchPhrase": "Implemented secondary concept",
-  "designation": "Python Developer",
-  "bs": "e-enable extensible e-tailers"
-  }
+  "company":"Abernathy Group",
+  "position":"Python Developer"
   },
   {
   "id": 9,
@@ -174,12 +142,8 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "(775)976-6794 x41206",
   "website": "conrad.com",
-  "company": {
-  "name": "Yost and Sons",
-  "catchPhrase": "Switchable contextually-based project",
-  "designation": "angular Developer",
-  "bs": "aggregate real-time technologies"
-  }
+  "company":"Yost and Sons",
+  "position":"React Developer"
   },
   {
   "id": 10,
@@ -194,11 +158,7 @@ export const employeeData:IEmployee[]= [
   },
   "phone": "024-648-3804",
   "website": "ambrose.net",
-  "company": {
-  "name": "Hoeger LLC",
-  "catchPhrase": "Centralized empowering task-force",
-  "designation": "angular Developer",
-  "bs": "target end-to-end models"
-  }
+  "company":"Hoeger LLC",
+  "position":"Angular Developer"
   }
   ]

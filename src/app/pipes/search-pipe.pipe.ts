@@ -14,8 +14,8 @@ export class SearchPipePipe implements PipeTransform {
     if (values && values.length){
       return values.filter((value:IEmployee) => {
         const namesMatch = value.name.toLowerCase().includes(searchText.toLowerCase());
-        const companyMatch = value.company.name.toLowerCase().includes(searchText.toLowerCase());
-        const designationMatch= value.company.designation.toLowerCase().includes(searchText)
+        const companyMatch = value.company.toLowerCase().includes(searchText.toLowerCase());
+        const designationMatch= value.position.toLowerCase().includes(searchText)
 
         return namesMatch||companyMatch||designationMatch
       })

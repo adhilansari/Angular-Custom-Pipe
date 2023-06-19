@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { IEmployee } from 'src/app/models/employee.model';
-import { employeeData } from 'src/app/pipes/data';
+import { employeeData } from 'src/app/data';
 
 @Component({
   selector: 'app-sorting',
@@ -11,9 +11,7 @@ import { employeeData } from 'src/app/pipes/data';
 export class SortingComponent implements OnInit{
   constructor(private http:HttpClient){}
   data!:IEmployee[];
-  nameKey!:string;
-  companyKey!:string;
-  positionKey!:string;
+  searchKey!:string
   orderedProducts:any
 
   ngOnInit(): void {
@@ -22,6 +20,7 @@ export class SortingComponent implements OnInit{
     // console.log(this.data);
     // })
     this.data=employeeData
+
   }
 
 
